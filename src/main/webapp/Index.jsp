@@ -1,8 +1,3 @@
-<%-- 
-    Document   : jsp
-    Created on : 18-09-2022, 21:32:42
-    Author     : Simon
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -15,17 +10,17 @@
         <h1>Evaluacion 1</h1>
         <h2>Calculadora de interes</h2>
         
-        <form name="frmCalculadora" action="Servlet" method="get">
+        <form name="frmCalculadora" action="controller" method="POST">
             <label>Capital:  </label>
-            <input type="string" name="nptCapital">
+            <input type="text" name="txtCapital">
             <br>
             <label>Tasa anual en %:  </label>
-            <input type="string" name="nptTasa">
+            <input type="text" name="txtTasa">
             <br>
             <label>Cantidad de Anos:  </label>
-            <input type="string" name="nptAnos">
+            <input type="text" name="txtAnos">
             <br>
-            <input type="submit" name="nptCalcular" value="Calcular">
+            <input type="submit" value="Calcular">
         </form>
         
         
